@@ -13,6 +13,11 @@ dist-ssr
 images
 *.local
 
+#Firebase
+.firebaserc
+firebase.json
+.firebase
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

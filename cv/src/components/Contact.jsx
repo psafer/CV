@@ -73,10 +73,11 @@ const Contact = () => {
         <form
           action="https://getform.io/f/byvkylla"
           method="POST"
-          className="xl:pl-10 2xl:pl-20"
+          className="xl:pl-10 2xl:pl-20 flex flex-col gap-4"
         >
-          <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
-            <div className="mb-4">
+          {/* Grid tylko dla pól Name i Email */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
               <label htmlFor="name" className="label">
                 Name
               </label>
@@ -87,11 +88,11 @@ const Contact = () => {
                 autoComplete="name"
                 required
                 placeholder="Piotr Cierpiał"
-                className="text-field"
+                className="text-field w-full"
               />
             </div>
 
-            <div className="mb-4">
+            <div>
               <label htmlFor="email" className="label">
                 Email
               </label>
@@ -102,26 +103,29 @@ const Contact = () => {
                 autoComplete="email"
                 required
                 placeholder="piotr.cierpial@outlook.com"
-                className="text-field"
+                className="text-field w-full"
               />
             </div>
-
-            <div className="mb-4">
-              <label htmlFor="message" className="label">
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Hi!"
-                required
-                className="text-field resize-y min-h-32 max-h-80 w-full"
-              ></textarea>
-            </div>
-            <button type="submit" className="btn-1 btn-primary">
-              Submit
-            </button>
           </div>
+
+          {/* Textarea szeroka na 100% */}
+          <div>
+            <label htmlFor="message" className="label">
+              Message
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Hi!"
+              required
+              className="text-field resize-y min-h-32 max-h-80 w-full"
+            ></textarea>
+          </div>
+
+          {/* Przycisk pod spodem, szerokość dostosowana do formularza */}
+          <button type="submit" className="btn-1 btn-primary w-full md:w-auto">
+            Submit
+          </button>
         </form>
       </div>
     </section>

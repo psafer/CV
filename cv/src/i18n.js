@@ -32,6 +32,9 @@ i18n
           ToolsDesc:
             "Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.",
           PortfolioTitle: "My portfolio highlights",
+          ContactTitle: "Contact me for collaboration or hiring opportunities.",
+          ContactDesc:
+            "Reach out today to discuss your project needs or hiring opportunities and start collaborating on something amazing!",
         },
       },
       pl: {
@@ -52,6 +55,10 @@ i18n
           ToolsDesc:
             "Poznaj zaawansowane narzędzia i technologie, które wykorzystuję do tworzenia nowoczesnych, wydajnych stron i aplikacji.",
           PortfolioTitle: "Projekty z mojego portfolio",
+          ContactTitle:
+            "Skontaktuj się ze mną w sprawie współpracy lub możliwości zatrudnienia.",
+          ContactDesc:
+            "Skontaktuj się ze mną już dziś, aby omówić potrzeby Twojego projektu lub możliwości zatrudnienia i zacząć współpracę nad czymś niesamowitym!",
         },
       },
     },

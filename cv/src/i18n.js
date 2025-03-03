@@ -35,6 +35,10 @@ i18n
           ContactTitle: "Contact me for collaboration or hiring opportunities.",
           ContactDesc:
             "Reach out today to discuss your project needs or hiring opportunities and start collaborating on something amazing!",
+          LetsWork: "Let's work together today!",
+          Sitemap: "Sitemap",
+          Socials: "Socials",
+          StartProject: "Start Project",
         },
       },
       pl: {
@@ -59,6 +63,10 @@ i18n
             "Skontaktuj się ze mną w sprawie współpracy lub możliwości zatrudnienia.",
           ContactDesc:
             "Skontaktuj się ze mną już dziś, aby omówić potrzeby Twojego projektu lub możliwości zatrudnienia i zacząć współpracę nad czymś niesamowitym!",
+          LetsWork: "Od dziś pracujmy razem!",
+          Sitemap: "Mapa strony",
+          Socials: "Media Społecznościowe",
+          StartProject: "Zacznij Projekt",
         },
       },
     },

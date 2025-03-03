@@ -123,7 +123,10 @@ const Contact = () => {
           </div>
 
           {/* Przycisk pod spodem, szerokość dostosowana do formularza */}
-          <button type="submit" className="btn-1 btn-primary w-full md:w-auto">
+          <button
+            type="submit"
+            className="btn-1 btn-primary w-full md:w-auto justify-center"
+          >
             Submit
           </button>
         </form>

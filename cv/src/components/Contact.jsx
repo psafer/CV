@@ -49,7 +49,7 @@ const socialLinks = [
 const Contact = () => {
   const { t } = useTranslation();
   return (
-    <section className="section" id="contact">
+    <section className="section reveal-up" id="contact">
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
         <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
           <h2 className="headline-2 lg:max-w-[12ch]">{t("ContactTitle")}</h2>

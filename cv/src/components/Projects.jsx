@@ -29,8 +29,8 @@ const Projects = () => {
   return (
     <section className="section" id="projects">
       <div className="container">
-        <h2 className="headline-2 mb-8">{t("PortfolioTitle")}</h2>
-        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(360px,_1fr))]">
+        <h2 className="headline-2 mb-8 reveal-up">{t("PortfolioTitle")}</h2>
+        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(360px,_1fr))] reveal-up">
           {works.map(({ imgSrc, title, tags, projectLink }, key) => (
             <ProjectCard
               key={key}
@@ -38,6 +38,7 @@ const Projects = () => {
               title={title}
               tags={tags}
               projectLink={projectLink}
+              classes={"reveal-up"}
             />
           ))}
         </div>

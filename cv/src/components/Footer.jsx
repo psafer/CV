@@ -48,7 +48,7 @@ const Footer = () => {
   const { t } = useTranslation();
   return (
     <footer className="section">
-      <div className="container">
+      <div className="container reveal-up">
         <div className="lg:grid lg:grid-cols-2">
           <div className="mb-10">
             <h2 className="headline-1 mb-8 lg:max-w-[12ch]">{t("LetsWork")}</h2>
@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
         <div className="flex items-center justify-between pt-10 mb-8">
           <a href="" className="">
-            <img src="/images/logo.svg" width={40} height={40} alt="Logo" />
+            <img src="/images/logo.png" width={40} height={40} alt="Logo" />
           </a>
           <p className="text-zinc-500 text-sm">
             &copy; 2025 <span className="text-zinc-200">Piotr Cierpiał</span>

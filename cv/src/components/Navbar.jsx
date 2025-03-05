@@ -64,7 +64,6 @@ const Navbar = ({ navOpen }) => {
     { label: t("About"), link: "#about", className: "nav-link" },
     { label: t("Skills"), link: "#skills", className: "nav-link" },
     { label: t("Projects"), link: "#projects", className: "nav-link" },
-    { label: t("Contact"), link: "#contact", className: "nav-link" },
     {
       label: t("Contact"),
       link: "#contact",

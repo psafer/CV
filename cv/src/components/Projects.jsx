@@ -18,6 +18,12 @@ const works = [
     projectLink: "https://neet-f16e6.web.app",
   },
   {
+    imgSrc: "/images/project-2.png",
+    title: "Library",
+    tags: ["Go", "MVC", "Student Project", "Web App"],
+    projectLink: "https://github.com/FifiTV/Library-Project",
+  },
+  {
     imgSrc: "/images/comingsoon.png",
     title: "Coming Soon . . .",
     tags: ["Coming", "Soon"],

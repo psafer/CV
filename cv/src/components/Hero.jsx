@@ -40,9 +40,8 @@ const Hero = () => {
             <ButtonPrimary
               label={t("Download")}
               icon="download"
-              href="/public/CV.pdf"
+              href="/CV.pdf"
               download="Piotr_Cierpial_CV.pdf"
-              target="_blank"
             />
             <ButtonOutline
               href="#about"

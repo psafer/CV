@@ -6,6 +6,7 @@
 /**
  * Node Modules
  */
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 const socialLinks = [
   {
@@ -48,6 +49,31 @@ const socialLinks = [
 
 const Contact = () => {
   const { t } = useTranslation();
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    try {
+      const response = await fetch("https://getform.io/f/byvkylla", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        setShowPopup(true);
+        event.target.reset();
+        setTimeout(() => setShowPopup(false), 3000);
+      } else {
+        console.error("Błąd podczas wysyłania formularza");
+      }
+    } catch (error) {
+      console.error("Wystąpił problem:", error);
+    }
+  };
+
   return (
     <section className="section reveal-up" id="contact">
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
@@ -71,10 +97,17 @@ const Contact = () => {
         </div>
 
         <form
-          action="https://getform.io/f/byvkylla"
           method="POST"
           className="xl:pl-10 2xl:pl-20 flex flex-col gap-4"
+          onSubmit={handleSubmit}
         >
+          {showPopup && (
+            <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 animate-pulse">
+              <div className="bg-green-500 text-white p-6 rounded-lg shadow-lg">
+                {t("Emailsucc")}
+              </div>
+            </div>
+          )}
           {/* Grid tylko dla pól Name i Email */}
           <div className="grid md:grid-cols-2 gap-4">
             <div>
@@ -100,6 +133,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 id="email"
+                pattern="^[a-zA-Z0-9_.+-ąćęłńóśźżĄĆĘŁŃÓŚŹŻ-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
                 autoComplete="email"
                 required
                 placeholder="piotr.cierpial@outlook.com"

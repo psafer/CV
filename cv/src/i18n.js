@@ -51,6 +51,8 @@ i18n
           SP: "System Programming",
           Backend: "Backend as a Service",
           Social: "Social Network App",
+          Library: "Online Library Project",
+          Emailsucc: "Email sent succesfully!",
         },
       },
       pl: {
@@ -92,6 +94,8 @@ i18n
           SP: "Programowanie systemowe",
           Backend: "Backend jako usługa",
           Social: "Aplikacja Społecznościowa",
+          Library: "Projekt Biblioteki Online",
+          Emailsucc: "Pomyślnie wysłano maila!",
         },
       },
     },

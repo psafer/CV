@@ -12,14 +12,9 @@ import { useTranslation } from "react-i18next";
 import SkillCard from "./SkillCard";
 const skillItem = [
   {
-    imgSrc: "/images/figma.svg",
-    label: "Figma",
-    desc: "Design tool",
-  },
-  {
     imgSrc: "/images/css3.svg",
     label: "CSS",
-    desc: "User Interface",
+    desc: "UI",
   },
   {
     imgSrc: "/images/javascript.svg",
@@ -29,17 +24,17 @@ const skillItem = [
   {
     imgSrc: "/images/nodejs.svg",
     label: "NodeJS",
-    desc: "Web Server",
-  },
-  {
-    imgSrc: "/images/expressjs.svg",
-    label: "ExpressJS",
-    desc: "Node Framework",
+    desc: "WebServer",
   },
   {
     imgSrc: "/images/mongodb.svg",
     label: "MongoDB",
     desc: "Database",
+  },
+  {
+    imgSrc: "/images/firebase.svg",
+    label: "Firebase",
+    desc: "Backend",
   },
   {
     imgSrc: "/images/react.svg",
@@ -49,7 +44,22 @@ const skillItem = [
   {
     imgSrc: "/images/tailwindcss.svg",
     label: "TailwindCSS",
-    desc: "User Interface",
+    desc: "UI",
+  },
+  {
+    imgSrc: "/images/cs.svg",
+    label: "C#",
+    desc: "AD",
+  },
+  {
+    imgSrc: "/images/dotnet.svg",
+    label: ".NET",
+    desc: "Framework",
+  },
+  {
+    imgSrc: "/images/cpp.svg",
+    label: "C++",
+    desc: "SP",
   },
 ];
 
@@ -68,7 +78,7 @@ const Skill = () => {
               key={key}
               imgSrc={imgSrc}
               label={label}
-              desc={desc}
+              desc={t(desc)}
               classes="reveal-up"
             />
           ))}

@@ -79,7 +79,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label htmlFor="name" className="label">
-                Name
+                {t("Name")}
               </label>
               <input
                 type="text"
@@ -111,12 +111,12 @@ const Contact = () => {
           {/* Textarea szeroka na 100% */}
           <div>
             <label htmlFor="message" className="label">
-              Message
+              {t("Message")}
             </label>
             <textarea
               name="message"
               id="message"
-              placeholder="Hi!"
+              placeholder={t("Hi")}
               required
               className="text-field resize-y min-h-32 max-h-80 w-full"
             ></textarea>
@@ -127,7 +127,7 @@ const Contact = () => {
             type="submit"
             className="btn-1 btn-primary w-full md:w-auto justify-center"
           >
-            Submit
+            {t("Submit")}
           </button>
         </form>
       </div>

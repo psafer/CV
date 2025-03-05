@@ -81,6 +81,8 @@ const Navbar = ({ navOpen }) => {
     { label: t("About"), link: "#about", id: "about" },
     { label: t("Skills"), link: "#skills", id: "skills" },
     { label: t("Projects"), link: "#projects", id: "projects" },
+    { label: t("Contact"), link: "#contact", id: "contact" },
+
     {
       label: t("switch_language"),
       action: toggleLanguage,

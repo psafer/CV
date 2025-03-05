@@ -50,6 +50,7 @@ i18n
           AD: "Application Development",
           SP: "System Programming",
           Backend: "Backend as a Service",
+          Social: "Social Network App",
         },
       },
       pl: {
@@ -90,6 +91,7 @@ i18n
           AD: "Programowanie aplikacji",
           SP: "Programowanie systemowe",
           Backend: "Backend jako usługa",
+          Social: "Aplikacja Społecznościowa",
         },
       },
     },

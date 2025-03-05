@@ -12,16 +12,16 @@ import ProjectCard from "./ProjectCard";
 import { useTranslation } from "react-i18next";
 const works = [
   {
-    imgSrc: "/images/project-1.jpg",
-    title: "Full stack music app",
-    tags: ["API", "MVC", "Development"],
-    projectLink: "https://musify-5al0.onrender.com/",
+    imgSrc: "/images/project-1.png",
+    title: "Social",
+    tags: ["SPA", "Firebase", "Fullstack"],
+    projectLink: "https://neet-f16e6.web.app",
   },
   {
-    imgSrc: "/images/project-2.jpg",
-    title: "Free stock photo app",
-    tags: ["API", "SPA"],
-    projectLink: "https://pixstock-official.vercel.app/",
+    imgSrc: "/images/comingsoon.png",
+    title: "Coming Soon . . .",
+    tags: ["Coming", "Soon"],
+    projectLink: "https://github.com/psafer",
   },
 ];
 const Projects = () => {
@@ -35,7 +35,7 @@ const Projects = () => {
             <ProjectCard
               key={key}
               imgSrc={imgSrc}
-              title={title}
+              title={t(title)}
               tags={tags}
               projectLink={projectLink}
               classes={"reveal-up"}
